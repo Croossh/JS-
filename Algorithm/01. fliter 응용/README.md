@@ -1,8 +1,8 @@
-### filter
+# Array.prototype.filter()
 
-filter는 콜백함수를 인자로 받는다
+filter는 콜백함수를 인자로 받는다.
 ```
-filter((item, index, array) => {
+Array.filter((item, index, array) => {
   //조건식
   }
 ```
