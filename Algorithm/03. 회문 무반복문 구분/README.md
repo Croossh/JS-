@@ -12,7 +12,7 @@ vsCode의 디버깅 기능을 통해 filter에서 요소들을 true로 반환해
 1. || 는 하나라도 true라면 true를 반환 <br>
 2. && 는 하나라도 false라면 false를 반환<br>
 3. 잊지말자.
-
+***
 ```javascript  
 let test = str
     .split("")
