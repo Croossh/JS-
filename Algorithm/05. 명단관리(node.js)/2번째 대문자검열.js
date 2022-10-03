@@ -1,3 +1,16 @@
+/* 문제 : 입력받은 풀네임의 이름만 출력
+1. 첫번째 입력값은 명단 갯수.
+ex) 4 입력 => 이후 다음 line 부터 4명의 이름 입력됨
+2. 두번째 입력값부터 영문으로 된 성+이름 형태 (한줄에 한개씩)
+ex)
+- 입력
+2
+ParkWoochan
+JohnWhtie
+- 출력
+Woochan
+White
+*/
 const readline = require("readline");
 
 const rl = readline.createInterface({
@@ -19,9 +32,12 @@ rl.on("line", function (x) {
   } else {
     arr.push(x); // 1번째줄 다음부터 arr에 집어넣기
 
+    // 첫번째 for문은 배열의 각 요소 접근
     for (let i = k; i < arr.length; i++) {
+      // 두번째 for문은 i번째 요소의 각 문자열 접근
       for (let j = 1; j < arr[i].length; j++) {
         if (arr[i][j] !== arr[i][j].toLowerCase()) {
+          // 두번째 대문자 발견시 slice
           result.push(arr[i].slice(j));
         }
       }
@@ -32,6 +48,7 @@ rl.on("line", function (x) {
   }
 
   if (count > N) {
+    // 기존의 최대입력 줄 갯수가 현재 count를 넘어갈 때 결과 출력 및 종료
     for (let i = 0; i < result.length; i++) {
       console.log(result[i]);
     }
