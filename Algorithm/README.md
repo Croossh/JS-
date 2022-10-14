@@ -37,12 +37,6 @@ git status
 git commit -m "test"
 ```
 
-- 혹은 5번과 6번의 과정을 함께 하고싶다면 ↓
-
-```
-git commit -am "test"
-```
-
 7. 마지막 push
 
 ```
