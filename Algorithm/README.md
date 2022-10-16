@@ -42,3 +42,9 @@ git commit -m "test"
 ```
 git push origin main
 ```
+
+8. 커밋 취소
+```
+git reset HEAD 파일명
+```
+파일명이 없다면 add 전체 취소가 된다.
