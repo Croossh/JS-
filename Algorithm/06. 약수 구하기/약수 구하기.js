@@ -4,7 +4,7 @@
 function divisor(num) {
   let numArr = [];
 
-  for (i = 1; i <= num; i++) {
+  for (let i = 1; i <= num; i++) {
     if (num % i === 0) {
       numArr.push(i);
     }
